@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 553
+  Height = 240
+  Top = 135
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.2.6.0'
+  object Button1: TButton
+    Left = 54
+    Height = 25
+    Top = 46
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object LazAutoUpdate: TLazAutoUpdate
+    About.Description.Strings = (
+      'A component for updating your application'#13#10'Designed for projects hosted by SourceForge and GitHub'#13#10#13#10'Main methods:'#13#10'Procedure AutoUpdate'#13#10'Function NewVersionAvailable: Boolean'#13#10'Function DownloadNewVersion: Boolean'#13#10'Function UpdateToNewVersion: Boolean'#13#10'Procedure ShowWhatsNewIfAvailable'#13#10'For troubleshooting, set DebugMode=TRUE'
+    )
+    About.Title = 'About LazAutoUpdate'
+    About.Height = 450
+    About.Width = 400
+    About.Font.Color = clNavy
+    About.Font.Height = -13
+    About.BackGroundColor = clWindow
+    About.Version = '0.3.8'
+    About.Authorname = 'Gordon Bamber'
+    About.Organisation = 'Public Domain'
+    About.AuthorEmail = 'minesadorada@charcodelvalle.com'
+    About.ComponentName = 'Laz Auto-update v0.3.8'
+    About.LicenseType = abModifiedGPL
+    SFProjectName = '<not applicable>'
+    auOtherSourceURL = '<not applicable>'
+    auOtherSourceFilename = '<not applicable>'
+    ProjectType = auGitHubReleaseZip
+    UpdatesFolder = 'updates'
+    VersionsININame = 'versions.ini'
+    ShowUpdateInCaption = True
+    ShowDialogs = True
+    VersionCountLimit = 1000000
+    DownloadCountLimit = 10000000
+    ZipfileName = 'versions.zip'
+    GitHubProjectname = 'ademkocamaz'
+    GitHubRepositoryName = 'lazarus-autoupdate-test'
+    GitHubBranchOrTag = 'main'
+    WorkingMode = lauUpdate
+    ShortCut.ShortcutName = 'MyShortcutName'
+    ShortCut.Category = scAudioVideo
+    Left = 40
+    Top = 128
+  end
+end
